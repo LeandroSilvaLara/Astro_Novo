@@ -23,7 +23,7 @@ object PresentationModule {
     // TODO 006: Adicionar a dependência do HomeViewModel com get()
     private fun viewModelModule() : Module {
         return module {
-            factory { HomeViewModel() }
+            factory { HomeViewModel(get()) }
         }
     }
 

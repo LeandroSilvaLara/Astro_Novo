@@ -6,14 +6,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import br.com.leandro.astro.data.model.Post
 import br.com.leandro.astro.data.repository.MockAPIService
+import br.com.leandro.astro.data.repository.PostRepository
 import br.com.leandro.astro.data.repository.PostRepositoryImpl
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import java.lang.StringBuilder
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel(private val repository: PostRepository) : ViewModel() {
 
-    private val repository = PostRepositoryImpl(MockAPIService)
 
     private val _listPost = MutableLiveData<List<Post>>()
     val listPost: LiveData<List<Post>>
