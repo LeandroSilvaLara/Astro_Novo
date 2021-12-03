@@ -2,6 +2,7 @@ package br.com.leandro.astro.data.repository
 
 import br.com.leandro.astro.data.model.Launch
 import br.com.leandro.astro.data.model.Post
+import br.com.leandro.astro.data.services.SpaceFlightNewsService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
@@ -11,7 +12,7 @@ import kotlinx.coroutines.flow.flow
  * usando um serviço mockado. Os dados são retornados na forma de um flow.
  */
 
-class PostRepositoryImpl(private val service: MockAPIService) : PostRepository {
+class PostRepositoryImpl(private val service: SpaceFlightNewsService) : PostRepository {
 
     /**
      * Essa função usa o construtor flow { } para emitir a lista de Posts
@@ -21,7 +22,7 @@ class PostRepositoryImpl(private val service: MockAPIService) : PostRepository {
      */
     override suspend fun listPosts(): Flow<List<Post>> = flow {
 
-        val postList = service.listPosts
+        val postList = service.listPosts()
         emit(postList)
 
     }
@@ -30,7 +31,7 @@ class PostRepositoryImpl(private val service: MockAPIService) : PostRepository {
 /**
  * Um serviço com dados mockados só para apoio durante o desenvolvimento.
  */
-
+/*
 object MockAPIService {
 
 
@@ -99,3 +100,5 @@ object MockAPIService {
     )
 
 }
+
+ */
