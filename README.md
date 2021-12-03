@@ -20,8 +20,13 @@
 ![Kiku](https://user-images.githubusercontent.com/49800137/144628877-e2d1003e-5928-4dbf-b532-fb409c037230.jpg)
 
 ### Screenshots:
+![Atro 1](https://user-images.githubusercontent.com/49800137/144630531-bc531295-6ca0-4c29-8110-8b080785a36e.jpg)
+
+![astro2](https://user-images.githubusercontent.com/49800137/144630539-ea7d42d7-af71-4de4-b2c2-d845acc4d9cc.jpg)
 
 
+
+### ----------------------------------------------------------------------------------------------
 
 
 # :man: Autor
